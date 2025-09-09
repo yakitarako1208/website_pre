@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ギャラリー</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        /* ヘッダーのスタイル */
+        header {
+            background-color: #333;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        /* ナビゲーションメニューのスタイル */
+        nav {
+            background-color: #444;
+            padding: 0.5rem;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0 1rem;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* メインコンテンツエリアのスタイル */
+        main {
+            padding: 2rem;
+            max-width: 960px;
+            margin: auto;
+        }
+
+        /* 作品リストのスタイル */
+        .artwork-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        /* 個々の作品アイテムのスタイル */
+        .artwork-item {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .artwork-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .artwork-item h3 {
+            padding: 1rem 0;
+            margin: 0;
+        }
+
+        /* フッターのスタイル */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>yakitarakoのポートフォリオ</h1>
+        <p>私の作品へようこそ。</p>
+    </header>
+
+    <nav>
+        <a href="#about">自己紹介</a>
+        <a href="#works">作品</a>
+        <a href="#contact">連絡先</a>
+    </nav>
+
+    <main>
+        <section id="about">
+            <h2>自己紹介</h2>
+            <p>2004年生まれ、デザインを学んでいます。最近はプログラミングとサーバ構築について学んでいます。</p>
+        </section>
+
+        <hr>
+
+        <section id="works">
+            <h2>作品</h2>
+            <div class="artwork-list">
+                <div class="artwork-item">
+                    <img src="https://via.placeholder.com/250" alt="作品1の画像">
+                    <h3>作品タイトル1</h3>
+                    <p>作品の説明</p>
+                </div>
+
+                <div class="artwork-item">
+                    <img src="https://via.placeholder.com/250" alt="作品2の画像">
+                    <h3>作品タイトル2</h3>
+                    <p>作品の説明</p>
+                </div>
+
+                <div class="artwork-item">
+                    <img src="https://via.placeholder.com/250" alt="作品3の画像">
+                    <h3>作品タイトル3</h3>
+                    <p>作品の説明</p>
+                </div>
+                
+                </div>
+        </section>
+
+        <hr>
+
+        <section id="contact">
+            <h2>連絡先</h2>
+            <p>メールアドレス: <a href="mailto:b1023182@fun.ac.jp">b1023182@fun.ac.jp</a></p>
+            <p>SNS: <a href="https://x.com/tyr_qb?s=21" target="_blank">Twitter</a>, <a href="https://www.instagram.com/kotoha_jd?igsh=MXRoOXZtbjBkcWp0Ng%3D%3D&utm_source=qr" target="_blank">Instagram</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; yakitarako</p>
+    </footer>
+
+</body>
+</html>
